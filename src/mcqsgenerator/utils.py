@@ -3,7 +3,6 @@ import PyPDF2
 import json
 import traceback
 
-
 def read_file(file):
     if file.name.endswith(".pdf"):
         try:
@@ -48,4 +47,3 @@ def get_table_data(quiz_str):
     except Exception as e:
         traceback.print_exception(type(e), e, e.__traceback__)
         return False
-
