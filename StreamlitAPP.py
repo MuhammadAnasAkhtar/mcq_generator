@@ -3,12 +3,12 @@ import json
 import traceback
 import pandas as pd
 from dotenv import load_dotenv
-from mcqsgenerator.utils import read_file,get_table_data
-from mcqsgenerator.logger import logging
-
+from mcqgenerator.utils import read_file,get_table_data
 import streamlit as st
 from langchain.callbacks import get_openai_callback
-from mcqsgenerator.MCQGENERATOR import generate_evaluate_chain
+from mcqgenerator.MCQGENERATOR import generate_evaluate_chain
+from mcqgenerator.logger import logging
+
 #loading json file
 
 with open('Response.json', 'r') as file:
